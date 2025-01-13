@@ -7,7 +7,7 @@ import os
 
 # Configuration
 WG_INTERFACE = "wg0"
-DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/You_WebHook_here"
+DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/Your_Webhook_here"
 CHECK_INTERVAL = 30
 INACTIVE_THRESHOLD = 210  # Consider inactive after 3 and a half minutes without handshake. 3.5 seconds.
 NOTIFICATION_TIMEOUT = 300  # Stop sending inactive notifications after 5 minutes
