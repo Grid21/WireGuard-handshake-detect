@@ -1,0 +1,15 @@
+[Unit]
+Description=WireGuard Connection Monitor
+After=network.target wg-quick@wg0.service
+
+[Service]
+Type=simple
+User=root
+Group=root
+ExecStart=/usr/bin/python3 /opt/wireguard-monitor/wg_monitor4.py
+WorkingDirectory=/opt/wireguard-monitor
+Restart=always
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target
